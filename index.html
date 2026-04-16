@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3865 Bentwood - Honest Assessment</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f5f3ef;
+    color: #1f2a37;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 24px 20px 64px; }
+  .hero {
+    background: #1f2a37;
+    color: #fff;
+    padding: 36px 28px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+  }
+  .hero .eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #c9b37d;
+    margin-bottom: 10px;
+  }
+  .hero h1 { font-size: 28px; font-weight: 600; margin-bottom: 8px; line-height: 1.25; }
+  .hero .sub { font-size: 15px; color: #c8d0db; }
+  .facts {
+    display: flex;
+    gap: 18px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+  }
+  .fact {
+    flex: 1;
+    min-width: 140px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .fact .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #9ba7b6; }
+  .fact .value { font-size: 18px; font-weight: 600; margin-top: 4px; }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(31,42,55,0.06);
+  }
+  .intro p { margin-bottom: 12px; font-size: 16px; }
+  .intro .signoff { font-size: 14px; color: #5a6677; margin-top: 14px; line-height: 1.5; }
+
+  .diagnosis {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(31,42,55,0.06);
+    overflow: hidden;
+  }
+  .diagnosis summary {
+    padding: 20px 24px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    color: #1f2a37;
+  }
+  .diagnosis summary::-webkit-details-marker { display: none; }
+  .diagnosis summary::after {
+    content: "+";
+    margin-left: auto;
+    font-size: 22px;
+    color: #9ba7b6;
+    font-weight: 300;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .diagnosis[open] summary::after { content: "-"; }
+  .diagnosis .body {
+    padding: 0 24px 22px 24px;
+    font-size: 15px;
+    color: #3a4657;
+  }
+  .num {
+    background: #c9b37d;
+    color: #1f2a37;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .cta {
+    background: #c9b37d;
+    color: #1f2a37;
+    padding: 32px 28px;
+    border-radius: 14px;
+    margin-top: 24px;
+    text-align: center;
+  }
+  .cta h2 { font-size: 22px; margin-bottom: 8px; }
+  .cta p { font-size: 15px; margin-bottom: 18px; }
+  .contact {
+    background: rgba(31,42,55,0.08);
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+  .contact strong { display: block; font-size: 16px; margin-bottom: 4px; }
+
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: #7a8595;
+    margin-top: 28px;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 480px) {
+    .wrap { padding: 16px 14px 48px; }
+    .hero { padding: 28px 22px; }
+    .hero h1 { font-size: 22px; }
+    .card, .diagnosis summary { padding-left: 20px; padding-right: 20px; }
+    .diagnosis .body { padding-left: 20px; padding-right: 20px; }
+    .fact { min-width: 100%; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="hero">
+      <div class="eyebrow">Honest Assessment</div>
+      <h1>3865 Bentwood Way, New Braunfels</h1>
+      <div class="sub">Prepared for Trena Campbell by Brad Claus, JLA Realty</div>
+      <div class="facts">
+        <div class="fact">
+          <div class="label">Days on Market</div>
+          <div class="value">235</div>
+        </div>
+        <div class="fact">
+          <div class="label">Expired</div>
+          <div class="value">04/16/2026</div>
+        </div>
+        <div class="fact">
+          <div class="label">Last List Price</div>
+          <div class="value">$335,000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card intro">
+      <p>Trena - first, I know this is not where you wanted to be. Eight
+      months on the market and then an expiration is exhausting, and it is
+      easy to read it as "something must be wrong with the house." It is
+      not. Your home actually presents beautifully, it is five years young,
+      and it has one of the single best financing stories on the market
+      right now.</p>
+      <p>I spent some time this morning looking at your listing the way a
+      rate-sensitive buyer's agent would look at it. Below are the four
+      things I think kept it from selling. No pitch. Just an honest second
+      opinion.</p>
+      <div class="signoff">
+        Brad Claus<br>
+        JLA Realty
+      </div>
+    </div>
+
+    <details class="diagnosis" open>
+      <summary><span class="num">1</span>235 days is doing more damage than the price</summary>
+      <div class="body">
+        Once a listing crosses the 60 day line, buyers start assuming
+        something is wrong with the home. By day 235 that assumption is
+        the main reason the showings slowed down - not the price, not the
+        photos, and not anything about the house itself. A fresh MLS
+        number, new photos, and a new go-to-market date is how that clock
+        gets reset so buyers see the home the way they would have on day
+        one.
+      </div>
+    </details>
+
+    <details class="diagnosis">
+      <summary><span class="num">2</span>The price chased the market down instead of leading it</summary>
+      <div class="body">
+        The first reduction did not come until February, roughly five
+        months into the listing, and then three small cuts in seven weeks
+        took you from $344K to $335K. The problem was not the final
+        number - the problem was the signal. Small, late reductions tell
+        the market the seller is slowly giving up, which invites lowballs
+        instead of offers. A strategic one-time move earlier, at a cleaner
+        round number, usually outperforms four dribbled cuts over six
+        months.
+      </div>
+    </details>
+
+    <details class="diagnosis">
+      <summary><span class="num">3</span>The marketing did not match the home</summary>
+      <div class="body">
+        For a home that shows as well as yours, the public listing only
+        surfaced one photo on several of the major consumer sites, and
+        there was no virtual tour or walkthrough video. Buyers in 2026
+        pre-screen almost everything online before they request a showing
+        - if they cannot see the kitchen, the primary suite, or the yard,
+        they move on to the next listing whether your home was right for
+        them or not. This is a very fixable piece: pro photos, a
+        Matterport or video tour, and light virtual staging on the two
+        key rooms.
+      </div>
+    </details>
+
+    <details class="diagnosis">
+      <summary><span class="num">4</span>Your biggest advantage was buried</summary>
+      <div class="body">
+        You are carrying an assumable VA loan at 2.7% with a payment
+        around $1,863 a month. In a 6-7% interest rate environment, that
+        is not a footnote - that is the headline. Right now it is sitting
+        deep in the agent remarks instead of being the first thing every
+        rate-shocked buyer sees when they scroll past your listing. When
+        a relist leads with "assumable 2.7% - under $1,900 a month," the
+        right buyer stops scrolling.
+      </div>
+    </details>
+
+    <div class="cta">
+      <h2>Let's have an honest conversation</h2>
+      <p>If any of this resonates, I would be glad to sit down and walk
+      through what a relist would look like. No pressure, no pitch.</p>
+      <div class="contact">
+        <strong>Brad Claus</strong>
+        JLA Realty<br>
+        (210) 787-8556<br>
+        Brad@theclausteam.com
+      </div>
+    </div>
+
+    <div class="footer">
+      Prepared 04/16/2026 by Brad Claus, JLA Realty. This page is a private
+      second-opinion prepared for the owner of 3865 Bentwood Way.
+    </div>
+
+  </div>
+</body>
+</html>
